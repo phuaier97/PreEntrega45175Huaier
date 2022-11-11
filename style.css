@@ -1,0 +1,307 @@
+*{margin: 0; 
+  padding: 0;
+}
+
+                                          /* VISTA MOBILE */
+
+.container{
+  width: 400px;
+}
+
+
+/* modificaciones del inicio */
+
+.section1{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px
+
+}
+
+
+.article__box{
+  background-color: lightgrey;
+  display: flex;
+  height: 150px;
+  width: 150px;
+  padding: 15px;
+  margin: 5px;
+  border: 3px solid rgb(214, 131, 131);
+}
+
+
+.article__box img{
+
+  width: 100%;
+}
+
+
+
+
+/* estilo del header de todas las paginas */
+
+header ul{
+  text-align: center;
+}
+header li{
+
+  list-style: none;
+
+  display: inline;
+
+  padding:  5px;
+
+  border-right: 3px solid  rgb(214, 131, 131); 
+
+  font-size: smaller;
+
+  text-align: center;
+}
+
+
+a{
+  text-decoration: none;
+
+  color: black; 
+}
+
+
+header h1{ 
+  font-size: 45px;
+  text-align: center;
+  color:  rgb(214, 131, 131);
+  padding: 10px 0px 30px 0px;
+
+}
+
+
+
+
+
+
+
+/* Estilo del menu/bebidas */
+
+.section__menu h1{
+  margin: 15px;
+  color:  rgb(214, 131, 131);
+  text-align: center;
+}
+
+.section__menu div p{
+  background-color: lightgrey;
+  padding: 5px;
+  margin-left: 35px;
+  width: 330px;
+}
+
+
+
+
+
+/*  Estilo de Contacto */
+
+.p__contacto{
+  padding: 10px;
+  margin: 20 7px 20px 70px;
+  color:  rgb(214, 131, 131);
+  font-size: larger;
+  text-align: left;
+  
+}
+
+form{
+  text-align: left;
+  margin: 50px;
+}
+.section__form{
+  margin: 10px;
+  padding: 10px;
+}
+.separation{
+   margin: 15px;
+padding: 20x;}
+
+ form div{
+  padding: 30px;
+} 
+label span{ text-decoration: underline; color: blue;}
+
+
+
+
+
+
+/* Estilo del footer */
+
+footer{
+  padding: 30px;
+}
+
+footer ul li{
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  padding:  20px;
+}
+
+.mapa{
+ margin: 5px 0px 70px 35px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+                                              /* VISTAS DESKTOP */
+
+
+ @media screen and (min-width: 768px){
+  .container{ width: 100%;}
+  
+  
+  /* modificaciones del inicio */
+  
+  .section1{
+  
+   flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+  
+  }
+  .img_grande{ display: none;}
+  
+  
+  .article__box{
+
+    height: 350px;
+    width: 350px;
+    margin: 20px;
+   
+  }
+  
+  
+  
+  
+  
+  
+  /* estilo del header de todas las paginas */
+  
+  header ul{
+  
+    margin: 40px 0px 40px 0px;
+  }
+
+  header li{
+    
+    padding:  15px;
+  
+    border-right: 5px solid  rgb(214, 131, 131); 
+  
+    font-size: 20px;
+  
+ 
+  }
+  
+  
+  a{
+    text-decoration: none;
+  
+    color: black; 
+  }
+  
+  
+  header h1{ 
+    font-size: 70px;
+    padding: 50px 0px 40px 0px;
+  }
+
+  /* Estilo del menu/bebidas */
+
+.section__menu h1{
+
+font-size: 30px;
+text-decoration: none;
+}
+
+.section__menu div p{
+  font-size: 20px;
+  padding: 15px;
+  margin-left: 35px;
+  width: 400px;
+}
+
+.bebidas{ 
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-areas:
+   "tit_be1 tit_be2"
+   "beb1 beb2"
+   "beb1 beb2"
+   "beb1 beb2"
+   "beb1 beb2"
+   "beb1 beb2"
+   "beb1 beb2"
+   "beb1 beb2"
+   "beb1 beb2";
+}
+.tit_be1{
+  grid-area: tit_be1;
+}
+.tit_be2{grid-area: tit_be2;}
+.beb1{grid-area: beb1;}
+.beb2{grid-area: beb2;}
+
+.carta{
+  margin: 20px 10 40px 10;
+  display: grid;
+  grid-template-areas:
+  "m1 m1"
+  "m3 m4"
+  "m3 m4"
+  "m3 m4"
+  "m3 m4"
+  "m3 m4"
+  "m3 m4"
+  "m3 m4"
+  "m3 m4";
+}
+
+.m1{grid-area: m1;}
+.m2{grid-area: m2;}
+.m3{grid-area: m3;}
+.m4{grid-area: m4;}
+
+/* Estilo del footer */
+
+footer{
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul li{
+  
+ text-align: center;
+}
+
+.mapa{
+ margin: 5px 0px 70px 35px;
+justify-content: center;}
+}
+
